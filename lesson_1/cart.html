@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta
+   http-equiv="X-UA-Compatible"
+   content="IE=edge"
+  />
+  <meta
+   name="viewport"
+   content="width=device-width, initial-scale=1.0"
+  />
+  <title>Index page</title>
+ </head>
+ <body>
+  <header>
+   <nav>
+    <ul>
+     <li>
+      <b>cart</b>
+     </li>
+     <li><a href="./main.html">main</a></li>
+     <li><a href="./about.html">about</a></li>
+    </ul>
+   </nav>
+  </header>
+  <main>
+   <form
+    action="#"
+    method="post"
+   >
+    <div>
+     <span>Выбрать город:</span>
+     <select
+      name="myHeaderSelect"
+      id="myHeaderSelect"
+     >
+      <option
+       value=""
+       selected
+       disabled
+      >
+       не выбран
+      </option>
+      <option value="Almaty">Almaty</option>
+      <option value="Astana">Astana</option>
+      <option value="Karaganda">Karaganda</option>
+     </select>
+     <span>Адрес:</span>
+     <input type="text" />
+    </div>
+    <div>
+     <h5>Тип Оплаты</h5>
+     <div>
+      <label for="test1">Наличкой</label>
+      <input
+       type="radio"
+       value="true"
+       name="payment"
+       id="test1"
+      />
+     </div>
+     <div>
+      <label for="test2">Картой</label>
+      <input
+       type="radio"
+       value="false"
+       name="payment"
+       id="test2"
+      />
+     </div>
+    </div>
+
+    <hr />
+    <div>
+     <strong>Почта:</strong
+     ><input
+      type="email"
+      placeholder="email"
+     />
+    </div>
+    <hr />
+    <div>
+     <b>Номер карты</b
+     ><input
+      type="number"
+      placeholder="Card Nubmer"
+     />
+    </div>
+    <hr />
+    <div>
+     <input
+      type="checkbox"
+      id="test3"
+      name="agreement_data"
+     />
+     <label for="test3">Согласен на обработку данных</label>
+     <input
+      type="checkbox"
+      checked
+      id="test4"
+      name="agreement_news"
+     />
+     <label for="test4">Подписаться на уведомления</label>
+    </div>
+
+    <button type="submit">сделать заказ</button>
+    <button type="reset">очистить</button>
+   </form>
+   <section></section>
+  </main>
+  <footer></footer>
+ </body>
+</html>
