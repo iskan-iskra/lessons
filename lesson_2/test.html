@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf8" />
+  <title>FORM</title>
+  <link
+   rel="stylesheet"
+   href="css/bootstrap-reboot.css"
+  />
+  <link
+   rel="stylesheet"
+   href="css/index.css"
+  />
+ </head>
+ <body>
+  <main>
+   <form
+    id="form"
+    class="forms"
+   >
+    <div class="row">
+     <label
+      class="title"
+      for="email"
+      >Email address</label
+     >
+     <input
+      required
+      id="email"
+      class="input wd1"
+      name="email"
+      placeholder="name@example.com"
+      type="text"
+     />
+    </div>
+    <div class="row">
+     <label
+      class="title"
+      for="name"
+      >Full name</label
+     >
+     <div class="mod_inner">
+      <input
+       required
+       id="name"
+       class="input wd05"
+       name="name"
+       placeholder="Name"
+       type="text"
+      />
+      <input
+       required
+       id="sername"
+       class="input wd05"
+       name="sername"
+       placeholder="Sername"
+       type="text"
+      />
+     </div>
+    </div>
+    <div class="row address">
+     <label
+      class="title"
+      for="address"
+      >Address</label
+     >
+     <input
+      id="address1"
+      class="input wd1"
+      name="address"
+      type="text"
+     />
+     <input
+      id="address2"
+      class="input wd1"
+      name="address"
+      type="text"
+     />
+    </div>
+    <div class="row mod_inner">
+     <div class="inner wd04">
+      <label
+       class="title"
+       for="city"
+       >City</label
+      >
+      <input
+       id="city"
+       disabled
+       value="Нурсултанджелес"
+       class="input"
+       name="city"
+       type="text"
+      />
+     </div>
+     <div class="inner wd035">
+      <label
+       class="title"
+       for="state"
+       >State</label
+      >
+      <select
+       required
+       id="state"
+       class="select"
+       name="state"
+       type="text"
+      >
+       <option value="Idaho">Idaho</option>
+       <option value="Iowa">Iowa</option>
+       <option value="Alabama">Alabama</option>
+       <option value="Alaska">Alaska</option>
+       <option value="West Virginia">West Virginia</option>
+       <option value="Texas">Texas</option>
+       <option value="Florida">Florida</option>
+       <option value="Louisiana">Louisiana</option>
+       <option value="Illinois">Illinois</option>
+       <option value="Kansas">Kansas</option>
+      </select>
+     </div>
+     <div class="inner wd025">
+      <label
+       class="title"
+       for="zip"
+       >Zip</label
+      >
+      <input
+       id="zip"
+       class="input number"
+       name="zip"
+       maxlength="4"
+       min="0"
+       max="99999"
+       placeholder="12345"
+       type="number"
+      />
+     </div>
+    </div>
+    <div class="row">
+     <label
+      class="title"
+      for="card"
+      >Payment details</label
+     >
+     <input
+      id="card"
+      class="input card"
+      name="card"
+      placeholder="1234 5678 9012 3456     12/22   123      12345"
+      type="text"
+     />
+    </div>
+    <div class="row">
+     <div class="title">
+      What radio technologies are you using?
+     </div>
+     <div class="mod_inner">
+      <input
+       id="inet2g"
+       class="input"
+       name="inet"
+       value="2G"
+       type="checkbox"
+      />
+      <label
+       class="chbx"
+       for="inet2g"
+      >
+       <div class="button"></div>
+       <div class="">2G</div>
+      </label>
+      <input
+       id="inet3g"
+       class="input"
+       name="inet"
+       value="3G"
+       type="checkbox"
+      />
+      <label
+       class="chbx"
+       for="inet3g"
+      >
+       <div class="button"></div>
+       <div class="">3G</div>
+      </label>
+      <input
+       id="inet4glte"
+       class="input"
+       name="inet"
+       value="4G LTE"
+       type="checkbox"
+      />
+      <label
+       class="chbx"
+       for="inet4glte"
+      >
+       <div class="button"></div>
+       <div class="">4G LTE</div>
+      </label>
+      <input
+       id="cat-m"
+       class="input"
+       name="inet"
+       value="CAT-M"
+       type="checkbox"
+      />
+      <label
+       class="chbx"
+       for="cat-m"
+      >
+       <div class="button"></div>
+       <div class="">CAT-M</div>
+      </label>
+     </div>
+    </div>
+    <div class="row">
+     <div class="title">
+      How much data do you expect to use each month?
+     </div>
+     <div class="mod_inner">
+      <input
+       id="inet50"
+       class="input"
+       name="inet_trafic"
+       value="0-50mb"
+       type="radio"
+      />
+      <label
+       class="radio"
+       for="inet50"
+      >
+       <div class="button radio"></div>
+       <div class="">0-50MB</div>
+      </label>
+      <input
+       id="inet250"
+       class="input"
+       name="inet_trafic"
+       value="50-250mb"
+       type="radio"
+      />
+      <label
+       class="radio"
+       for="inet250"
+      >
+       <div class="button radio"></div>
+       <div class="">50-250MB</div>
+      </label>
+      <input
+       id="inet1000"
+       class="input"
+       name="inet_trafic"
+       value="250-1000mb"
+       type="radio"
+      />
+      <label
+       class="radio"
+       for="inet1000"
+      >
+       <div class="button radio"></div>
+       <div class="">250MB-1GB</div>
+      </label>
+      <input
+       disabled
+       id="inetmore"
+       class="input"
+       name="inet_trafic"
+       value="over1000mb"
+       type="radio"
+      />
+      <label
+       class="radio"
+       for="inetmore"
+      >
+       <div class="button radio"></div>
+       <div class="">1GB+</div>
+      </label>
+     </div>
+    </div>
+    <div class="row">
+     <label
+      class="title"
+      for="promo"
+      >Promo code</label
+     >
+     <input
+      id="promo"
+      class="input"
+      name="promo"
+      type="text"
+     />
+    </div>
+    <div class="row mod_inner">
+     <input
+      checked
+      disabled
+      id="agreement"
+      class="input"
+      name="agreement"
+      value="agree"
+      type="checkbox"
+     />
+     <label
+      class="chbx agreement"
+      for="agreement"
+     >
+      <div class="button"></div>
+      <div class="">Sign me up for annoying offers</div>
+     </label>
+     <button
+      form="form"
+      class="button2"
+     >
+      Place order
+     </button>
+    </div>
+   </form>
+  </main>
+
+  <footer>Done by Iskander</footer>
+ </body>
+</html>

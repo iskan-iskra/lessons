@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta
+   http-equiv="X-UA-Compatible"
+   content="IE=edge"
+  />
+  <meta
+   name="viewport"
+   content="width=device-width, initial-scale=1.0"
+  />
+  <title>form</title>
+ </head>
+ <body>
+  <main>
+   <section>
+    <table
+     width="400"
+     border="1px solid black"
+     cellspacing="10px"
+    >
+     <tr>
+      <td>
+       <h1 align="center">Form</h1>
+       <form
+        action="#"
+        target="_blank"
+        method="get"
+       >
+        <fieldset>
+         <legend>Client info</legend>
+         <div>
+          <span>Name:</span>
+          <input
+           type="text"
+           name="client_name"
+           size="30"
+           required
+          />
+         </div>
+         <hr />
+         <div>
+          <span>Sername:</span>
+          <input
+           type="text"
+           name="client_sername"
+           size="30"
+          />
+         </div>
+         <hr />
+         <div>
+          <span>Birth Date:</span>
+          <input
+           type="date"
+           name="client_birth-date"
+           min="1997-03-11"
+           max="2023-04-23"
+           required
+          />
+         </div>
+         <hr />
+         <div>
+          <span>Gender:</span>
+          <input
+           type="radio"
+           name="client_gender"
+           value="female"
+           id="GenderFemale"
+           required
+          />
+          <label for="GenderFemale">Female</label>
+          <input
+           type="radio"
+           name="client_gender"
+           value="male"
+           id="GenderMale"
+           required
+          />
+          <label for="GenderMale">Male</label>
+         </div>
+        </fieldset>
+        <fieldset>
+         <legend>Contact info</legend>
+         <div>
+          <span>Email:</span
+          ><input
+           type="email"
+           name="client_email"
+          />
+         </div>
+         <hr />
+         <div>
+          <span>Phone number:</span>
+          <input
+           type="tel"
+           name="client_phone-number"
+           required
+          />
+         </div>
+         <hr />
+         <div>
+          <label for="ReferalSelect">Referal from:</label>
+          <select
+           name="client_referal"
+           required
+           id="ReferalSelect"
+          >
+           <option
+            value="none"
+            disabled
+            selected
+           >
+            none
+           </option>
+           <option value="instagramm">Instagramm</option>
+           <option value="television">TV</option>
+           <option value="email">email</option>
+          </select>
+         </div>
+        </fieldset>
+        <hr />
+        <fieldset>
+         <legend>Product choose</legend>
+         <div>
+          <label for="ProductColor">Product color</label>
+          <input
+           type="color"
+           name="product_color"
+           id="ProductColor"
+          />
+         </div>
+         <hr />
+         <div>
+          <span>Product cost</span>
+          <input
+           type="number"
+           value="100000"
+           name="product_cost"
+           id="ProductCost"
+           readonly
+          /><span>$</span>
+         </div>
+         <hr />
+        </fieldset>
+
+        <div>
+         <button type="submit">Отправить данные</button>
+         <button type="reset">Очистить форму</button>
+        </div>
+       </form>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <h2 align="center">example output</h2>
+       <fieldset>
+        <form
+         oninput="margin_absolute.value=parseInt(SellingPriceOfProduct.value)-parseInt(CostOfProduct.value)-parseInt(AdditionalServiceOfProduct.value);
+         margin_relevant.value=parseInt(margin_absolute.value)*100/parseInt(SellingPriceOfProduct.value)"
+        >
+         <div>
+          <span>Selling price ($)</span>
+          <input
+           type="number"
+           id="SellingPriceOfProductId"
+           name="SellingPriceOfProduct"
+           value="10000"
+          />
+         </div>
+         <div>
+          <span>Cost of product ($)</span>
+          <input
+           type="number"
+           id="CostOfProductId"
+           name="CostOfProduct"
+           value="6000"
+          />
+         </div>
+         <div>
+          <span>Additional services ($)</span>
+          <input
+           type="number"
+           id="AdditionalServiceOfProductId"
+           name="AdditionalServiceOfProduct"
+           value="1000"
+          />
+         </div>
+         <hr />
+         <strong>Result:</strong>
+         <div>
+          <span>Margin absolute ($)</span>
+          <output
+           name="margin_absolute"
+           for="AdditionalServiceOfProductId CostOfProductId SellingPriceOfProductId"
+           >3000</output
+          >
+         </div>
+         <div>
+          <span>Margin relevant (%):</span>
+          <output
+           name="margin_relevant"
+           for="margin_absolute SellingPriceOfProductId"
+           >30</output
+          >
+         </div>
+        </form>
+       </fieldset>
+      </td>
+     </tr>
+    </table>
+   </section>
+  </main>
+ </body>
+</html>
