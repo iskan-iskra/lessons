@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta
+   http-equiv="X-UA-Compatible"
+   content="IE=edge"
+  />
+  <meta
+   name="viewport"
+   content="width=device-width, initial-scale=1.0"
+  />
+  <title>Document</title>
+ </head>
+ <body>
+  <header>
+   <nav>
+    <ul>
+     <li>test</li>
+    </ul>
+   </nav>
+  </header>
+  <main>
+   <table
+    width="400"
+    border="1px solid black"
+   >
+    <caption>
+     <h1>Form</h1>
+    </caption>
+    <tr>
+     <td>
+      <form
+       action="#"
+       method="post"
+      >
+       <fieldset>
+        <legend>Client info</legend>
+        <div>
+         <span>Name:</span>
+         <input
+          type="text"
+          name="client_name"
+          size="30"
+          placeholder="write name here"
+          value="Iskander"
+         />
+        </div>
+        <hr />
+        <div>
+         <span>Sername:</span>
+         <input
+          type="text"
+          name="client_sername"
+          size="30"
+          placeholder="write sername here"
+         />
+        </div>
+        <hr />
+        <div>
+         <span>Birth date:</span>
+         <!-- YYYY-MM-DD -->
+         <input
+          type="date"
+          name="client_birth-date"
+          min="2020-04-24"
+          max="2023-04-24"
+         />
+        </div>
+        <hr />
+        <div>
+         <span>Gender:</span>
+         <label for="GenderMale">Male</label>
+         <input
+          type="radio"
+          name="client_gender"
+          value="male"
+          checked
+          id="GenderMale"
+         />
+         <label for="GenderFemale">Female</label>
+         <input
+          type="radio"
+          name="client_gender"
+          value="female"
+          id="GenderFemale"
+         />
+        </div>
+       </fieldset>
+       <h4>Кнопки</h4>
+       <div>
+        <button type="submit">Отправить заявку</button>
+        <button type="reset">Очистить</button>
+       </div>
+      </form>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <form action="#">
+       <input
+        type="text"
+        name="test1"
+       />
+       <input
+        type="email"
+        name="test2"
+        required
+       />
+       <input
+        type="text"
+        name="test3"
+        value="default value"
+       />
+       <button type="submit">Submit</button>
+       <button type="reset">Clear</button>
+      </form>
+     </td>
+    </tr>
+   </table>
+  </main>
+ </body>
+</html>
