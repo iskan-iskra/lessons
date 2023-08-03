@@ -1,0 +1,32 @@
+$background_color: #fff;
+$text_color: #000;
+$prime_color: rgb(1, 167, 73);
+$error_color: rgb(196, 0, 0);
+$modal__content_color: rgb(217, 0, 255);
+$full_sized: 1000px;
+
+
+
+@mixin text_title {
+  font-size: 21px;
+  font-weight: 800;
+}
+@mixin content_text {
+  font-size: 20px
+}
+
+.button {
+  &_add {
+    background-color: $prime_color;
+  }
+
+  &_cancel {
+    background-color: $error_color;
+  }
+}
+
+.error_message {
+  background-color: $error_color;
+  width: $full_sized;
+}
+

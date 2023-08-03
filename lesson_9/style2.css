@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 
+  "asd asd"
+  "side-bar main"
+  "footer footer"
+  ;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+
+.test {
+  grid-area: test;
+  background-color: black;
+}
+
+header {
+  grid-area: asd;
+  background-color: red;
+}
+
+.side-bar {
+  grid-area: side-bar;
+  background-color: aqua;
+}
+
+main {
+  grid-area: main;
+  background-color: gray;
+}
+
+footer {
+  background-color: blue;
+  grid-area: footer;
+}

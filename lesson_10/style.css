@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 50px;
+  display: flex;
+}
+
+
+.conteiner {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: 2px solid blue;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-el {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 1;
+  transform: translateX(-100%);
+  transition:transform .3s .3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+.hover-text {
+  color: white;
+  opacity: 0;
+  transition: all .3s  linear;
+}
+
+.conteiner:hover .hover-el {
+  transition: transform .3s linear;
+
+}
+.conteiner:hover .hover-text {
+  transition: all .3s .3s linear;
+  opacity: 1 ;
+}

@@ -1,0 +1,11 @@
+.button_add {
+  background-color: rgb(1, 167, 73);
+}
+.button_cancel {
+  background-color: rgb(196, 0, 0);
+}
+
+.error_message {
+  background-color: rgb(196, 0, 0);
+  width: 1000px;
+}/*# sourceMappingURL=myStyle.css.map */
